@@ -222,6 +222,45 @@
         { label: 'Voir le code GitHub', label_en: 'View the GitHub code', href: 'https://github.com/Phouangvictor/Michi.git', icon: 'code', ghost: true }
       ],
       thumbs: ['../assets/images/michi.png', '#E8DCC8', '#d8c4a0']
+    },
+    {
+      hero: 'Hinge',
+      heroColor: '#fff',
+      gradient: 'linear-gradient(135deg, #2b1a4a, #7b2ff7)',
+      date: '2026',
+      category: 'Feature concept · Match Group Hack Days',
+      category_en: 'Feature concept · Match Group Hack Days',
+      title: 'Hinge — « The First Date »',
+      title_en: 'Hinge — "The First Date"',
+      desc: [
+        "Hackathon de trois jours dans les bureaux de Match Group (Tinder, Hinge, Meetic), avec un double rôle : former les équipes internes à Claude et concourir au hackathon interne devant un jury incluant Spencer Rascoff, CEO de Match Group. Thème : Intent over Habit (l'intention plutôt que l'habitude).",
+        "Le problème : sur les applis de rencontre, matcher est facile — mais les conversations s'essoufflent souvent avant que les gens ne se voient. L'enjeu : aider les utilisateurs à passer d'un « spark » en ligne à un vrai rendez-vous, sans friction sociale (« qui propose en premier ? ») ni pression.",
+        "La solution : une fonctionnalité native intégrée à la conversation Hinge qui transforme un « spark » en vrai date. Après quelques messages, l'app détecte une bonne connexion et invite à planifier un rendez-vous — sans timer ni notification intrusive. Depuis un menu « + », l'utilisateur propose l'un des trois lieux parisiens curatés, explore chacun via une fiche détaillée (photos, adresse, horaires, budget), visualise les lieux à mi-chemin sur une carte, et le partage à son match. Une fois l'accord mutuel, le date est posé et l'itinéraire s'ouvre en un tap.",
+        "Fonctionnalités clés : nudge « spark » contextuel après ~6 messages · hub « + » (proposer un date / lieux à proximité / GIFs) · 3 propositions de lieux à choisir, décliner ou relancer · fiches détail des lieux · carte interactive montrant le point milieu des deux utilisateurs · proposition dans le fil → confirmation mutuelle → itinéraire Google Maps."
+      ],
+      desc_en: [
+        "A three-day hackathon at Match Group's offices (Tinder, Hinge, Meetic), with a dual role: training the internal teams on Claude and competing in their in-house hackathon before a jury including Spencer Rascoff, CEO of Match Group. Theme: Intent over Habit.",
+        "The problem: on dating apps, matching is easy — but conversations often fizzle out before people meet. The challenge: help users turn an online 'spark' into a real date, without social friction ('who asks first?') or pressure.",
+        "The solution: a native feature built into the Hinge conversation that turns a 'spark' into a real date. After a few messages, the app detects a good connection and invites the user to plan a date — no timer, no intrusive notifications. From a '+' menu, the user proposes one of three curated Paris venues, explores each via a detailed card (photos, address, hours, budget), sees the halfway venues on a map, and shares it with their match. Once mutually agreed, the date is set and directions open in one tap.",
+        "Key features: contextual 'spark' nudge after ~6 messages · '+' hub (propose a date / nearby venues / GIFs) · 3 venue suggestions to pick, decline or refresh · detailed venue cards · interactive map showing the midpoint between the two users · in-thread proposal → mutual confirmation → Google Maps directions."
+      ],
+      stack: ['Claude (Design, Code, Artefacts)', 'HTML / CSS / JS', 'Leaflet + OpenStreetMap', 'API Tenor'],
+      role: 'Conception et développement du prototype interactif de bout en bout — parcours UX, UI fidèle à Hinge (design system, typographie, composants) et intégration front-end.',
+      role_en: 'End-to-end design and development of the interactive prototype — UX flow, UI faithful to Hinge (design system, typography, components) and front-end integration.',
+      results: [
+        'Prototype entièrement cliquable, démo en live',
+        'Construit en 3 jours',
+        'Présenté au CEO et au jury de Match Group'
+      ],
+      results_en: [
+        'Fully clickable prototype, live demo',
+        'Built in 3 days',
+        'Presented to the CEO and jury of Match Group'
+      ],
+      links: [
+        { label: 'Voir le prototype', label_en: 'View the prototype', href: 'https://declic-chat.pages.dev', icon: 'open_in_new' }
+      ],
+      thumbs: ['#2b1a4a', '#7b2ff7', '#b06cff']
     }
   ];
 
