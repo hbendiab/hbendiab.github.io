@@ -157,8 +157,8 @@
       keywords: ['expérience', 'experience', 'sncf', 'arval', 'confiance', 'bnp', 'entreprise', 'travail', 'job', 'mission', 'company'],
       response: {
         text: {
-          fr: "Mes expériences pro 💼\n\n🏦 Arval BNP Paribas (en cours, depuis septembre 2025)\nChargée de marketing relationnel · Master 1\n\n🚂 Groupe SNCF (2024-2025)\nAssistante cheffe de publicité corporate · Bachelor\nCampagne JEP 2025, stratégie RSE publicité, analyse audiences\n\n🏗️ Groupe Confiance (2022-2024)\nAlternante technique · BTS\n\n⚡ Freelance auto-entrepreneuse (depuis 2021)",
-          en: "My work experience 💼\n\n🏦 Arval BNP Paribas (ongoing, since September 2025)\nRelationship marketing officer · Master 1\n\n🚂 Groupe SNCF (2024-2025)\nCorporate advertising manager assistant · Bachelor\nEHD 2025 campaign, CSR advertising strategy, audience analysis\n\n🏗️ Groupe Confiance (2022-2024)\nTechnical apprentice · BTS\n\n⚡ Self-employed freelance (since 2021)"
+          fr: "Mes expériences pro 💼\n\n🏦 Arval BNP Paribas (en cours, depuis septembre 2025)\nChargée de marketing relationnel · Master 1\nCampagnes relationnelles B2B (30 000+ clients) et A/B tests via Oracle Eloqua, analyse des KPI et reporting, analyse site web (Piwik)\n\n🚂 Groupe SNCF (2024-2025)\nAssistante cheffe de publicité corporate · Bachelor\nCampagne JEP 2025, stratégie RSE publicité, analyse audiences\n\n🏗️ Groupe Confiance (2022-2024)\nAlternante technique · BTS\n\n⚡ Freelance auto-entrepreneuse (depuis 2021)",
+          en: "My work experience 💼\n\n🏦 Arval BNP Paribas (ongoing, since September 2025)\nRelationship marketing officer · Master 1\nB2B relationship campaigns (30,000+ customers) and A/B tests via Oracle Eloqua, KPI analysis and reporting, website analytics (Piwik)\n\n🚂 Groupe SNCF (2024-2025)\nCorporate advertising manager assistant · Bachelor\nEHD 2025 campaign, CSR advertising strategy, audience analysis\n\n🏗️ Groupe Confiance (2022-2024)\nTechnical apprentice · BTS\n\n⚡ Self-employed freelance (since 2021)"
         },
         followup: {
           fr: ["Tes projets phares ?", "Pourquoi te recruter ?"],
