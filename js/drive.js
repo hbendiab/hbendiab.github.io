@@ -83,7 +83,8 @@
     'admin': {
       title: 'Documents administratifs', title_en: 'Administrative documents',
       files: [
-        { name: 'CV - Hanine Bendiab.pdf', size: '1,2 Mo', size_en: '1.2 MB' },
+        { name: 'CV - Hanine Bendiab (FR).pdf', size: '229 Ko', size_en: '229 KB' },
+        { name: 'CV - Hanine Bendiab (EN).pdf', size: '228 Ko', size_en: '228 KB' },
         { name: 'Lettre de motivation.pdf', name_en: 'Cover letter.pdf', size: '0,8 Mo', size_en: '0.8 MB' },
         { name: "Pièce d'identité.pdf", name_en: 'ID document.pdf', size: '0,5 Mo', size_en: '0.5 MB' }
       ]
