@@ -226,6 +226,7 @@
     {
       hero: 'Hinge',
       heroColor: '#fff',
+      heroImg: '../assets/images/Matchgroup%201.JPG',
       gradient: 'linear-gradient(135deg, #2b1a4a, #7b2ff7)',
       date: '2026',
       category: 'Feature concept · Match Group Hack Days',
@@ -260,7 +261,18 @@
       links: [
         { label: 'Voir le prototype', label_en: 'View the prototype', href: 'https://declic-chat.pages.dev', icon: 'open_in_new' }
       ],
-      thumbs: ['#2b1a4a', '#7b2ff7', '#b06cff']
+      thumbs: [
+        '../assets/images/Matchgroup%201.JPG',
+        '../assets/images/Matchgroup%202.JPG',
+        '../assets/images/matchgroup3.JPG',
+        '../assets/images/Matchgroup4.JPG'
+      ],
+      photos: [
+        { img: '../assets/images/Matchgroup%201.JPG' },
+        { img: '../assets/images/Matchgroup%202.JPG' },
+        { img: '../assets/images/matchgroup3.JPG' },
+        { img: '../assets/images/Matchgroup4.JPG' }
+      ]
     }
   ];
 
