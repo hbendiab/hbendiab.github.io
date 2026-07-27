@@ -226,7 +226,9 @@
     {
       hero: 'Hinge',
       heroColor: '#fff',
-      heroImg: '../assets/images/Matchgroup%201.JPG',
+      heroImg: '../assets/images/matchgroup-1.jpg',
+      /* Photo 1 est en portrait : on remonte le cadrage sur les visages */
+      heroImgPos: 'center 22%',
       gradient: 'linear-gradient(135deg, #2b1a4a, #7b2ff7)',
       date: '2026',
       category: 'Feature concept · Match Group Hack Days',
@@ -262,16 +264,16 @@
         { label: 'Voir le prototype', label_en: 'View the prototype', href: 'https://declic-chat.pages.dev', icon: 'open_in_new' }
       ],
       thumbs: [
-        '../assets/images/Matchgroup%201.JPG',
-        '../assets/images/Matchgroup%202.JPG',
-        '../assets/images/matchgroup3.JPG',
-        '../assets/images/Matchgroup4.JPG'
+        { img: '../assets/images/matchgroup-1.jpg', pos: 'center 22%' },
+        '../assets/images/matchgroup-2.jpg',
+        '../assets/images/matchgroup-3.jpg',
+        '../assets/images/matchgroup-4.jpg'
       ],
       photos: [
-        { img: '../assets/images/Matchgroup%201.JPG' },
-        { img: '../assets/images/Matchgroup%202.JPG' },
-        { img: '../assets/images/matchgroup3.JPG' },
-        { img: '../assets/images/Matchgroup4.JPG' }
+        { img: '../assets/images/matchgroup-1.jpg', pos: 'center 22%' },
+        { img: '../assets/images/matchgroup-2.jpg' },
+        { img: '../assets/images/matchgroup-3.jpg' },
+        { img: '../assets/images/matchgroup-4.jpg' }
       ]
     }
   ];
@@ -324,24 +326,27 @@
     el.hero.style.background = p.gradient;
     el.hero.style.color = p.heroColor || '#fff';   // texte foncé sur gradient clair (Michi)
     if (p.heroImg) {
-      el.hero.innerHTML = '<img src="' + p.heroImg + '" alt="" onerror="this.remove()">';
+      const heroPos = p.heroImgPos ? ' style="object-position:' + p.heroImgPos + '"' : '';
+      el.hero.innerHTML = '<img src="' + p.heroImg + '" alt=""' + heroPos + ' onerror="this.remove()">';
     } else {
       el.hero.textContent = p.hero;
     }
 
-    // Miniatures : image (chemin) ou couleur
-    el.thumbs.innerHTML = (p.thumbs || []).map((t) =>
-      t.indexOf('/') !== -1
-        ? '<div class="pmodal__thumb" style="background-image:url(' + t + ')"></div>'
-        : '<div class="pmodal__thumb" style="background:' + t + '"></div>'
-    ).join('');
+    // Miniatures : image (chemin, éventuellement { img, pos }) ou couleur
+    el.thumbs.innerHTML = (p.thumbs || []).map((t) => {
+      const src = (typeof t === 'string') ? t : t.img;
+      if (src.indexOf('/') === -1) return '<div class="pmodal__thumb" style="background:' + src + '"></div>';
+      const pos = (typeof t === 'object' && t.pos) ? ';background-position:' + t.pos : '';
+      return '<div class="pmodal__thumb" style="background-image:url(' + src + ')' + pos + '"></div>';
+    }).join('');
 
     // Photos : image ou gradient + libellé
     if (p.photos && p.photos.length) {
       el.photosW.style.display = '';
       el.photos.innerHTML = p.photos.map((ph) =>
         ph.img
-          ? '<div class="pmodal__photo"><img src="' + ph.img + '" alt="" onerror="this.remove()"></div>'
+          ? '<div class="pmodal__photo"><img src="' + ph.img + '" alt=""' +
+            (ph.pos ? ' style="object-position:' + ph.pos + '"' : '') + ' onerror="this.remove()"></div>'
           : '<div class="pmodal__photo" style="background:' + ph.bg + '">' + escape(ph.label || '') + '</div>'
       ).join('');
     } else {
